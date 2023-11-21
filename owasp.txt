@@ -1,0 +1,32 @@
+What is OWASP and what is its primary mission as described in the article?
+
+Det är en icke vinstdrivande organisation vars mål är att förbättra nätsäkerhet för webb applikationer.
+Allt material de framställer, som dokument eller videor, ska vara gratis och tillgängligt för allmänheten.
+En av de sakerna de tar fram varje år är en topp 10 lista, som innehåller vad de anser är de 10 största riskerna just nu inom säkerhet för webbapplikationer.
+
+Explain the concept of "Injection". Provide an example of how an injection attack could compromise a web application's security.
+
+Det är när en användare sänder skadlig data till en server.
+Det kan handla om att användaren skickar skadlig kod i ett formulär som sedan körs på servern.
+
+Explain two strategies to prevent Broken Authentication vulnerabilities.
+
+Ett sätt är att implementera tvåstegsverifikation.
+Det kan handla om att användarna får ett sms med en kod som de måste skriva in utöver ett lösenord.
+
+Det går även att begränsa hur många inloggningsförsök som tillåts under en viss tid.
+
+Describe the potential consequences of Insecure Deserialization in web applications. How can developers protect against such attacks?
+
+Det kan resultera i en DDOS attack.
+Den enda riktigt säkra metoden för att skydda sig emot det är att endast tillåta Deserialization från fördefinierade pålitliga källor.
+
+
+Briefly define Cross-Site Scripting (XSS) as outlined in the article and list two methods suggested in the article to prevent XSS attacks in web applications.
+
+Det är när en användare lägger till kod i en url till en webbapplikation eller hemsida.
+Det kan handla om skadlig javascriptkod som lagts till i slutet på en url.
+
+För att skydda sig emot det kan man implementera validering och "rengöring" av datan.
+Att rengöra datan kan handla om att göra om alla bokstäver till små bokstäver och ta bort symboler.
+Man kan även använda ramverk som ReactJS som har inbyggda skyddsfunktioner eller bara ta emot pålitliga http förfrågningar.
