@@ -33,12 +33,13 @@ async function getChannel() {
             channelImg.src = channel.image;
         }
         // Set attributes and style
-
+        
+        id = channel.id
         channelImg.setAttribute("class", "image")
         channelName.textContent = channel.name;
         channelName.setAttribute("class", "name")
         audio.controls = "controls";
-        audio.src = `${channel.liveaudio.url}`;
+        audio.src = `http://sverigesradio.se/topsy/direkt/${id}-hi.mp3`;
         audio.setAttribute("class", "audio")
         console.log(channelImg);
         channelDiv.style.backgroundColor = `#${channel.color}`;
